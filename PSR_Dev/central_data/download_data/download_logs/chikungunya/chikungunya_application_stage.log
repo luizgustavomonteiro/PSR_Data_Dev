@@ -1,0 +1,31 @@
+2025-05-01 14:06:29,995 - INFO - Accessing http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/chikunbr.def
+2025-05-01 14:06:30,183 - INFO - Line selected: Semana epidem. notificação
+2025-05-01 14:06:30,307 - INFO - Column selected: UF de notificação
+2025-05-01 14:06:30,415 - INFO - Content selected: Todos os casos
+2025-05-01 14:06:30,549 - INFO - Year selected: 2025
+2025-05-01 14:06:30,646 - INFO - Button 'mostre' clicked successfully!
+2025-05-01 14:06:30,661 - INFO - Switched to new tab.
+2025-05-01 14:06:32,192 - INFO - CSV file download initiated.
+2025-05-01 14:07:02,195 - INFO - Arquivo renomeado de 'sinannet_cnv_chikunbr140630191_7_171_194.csv' para 'Chikungunya'
+2025-05-01 14:07:02,196 - INFO - Stage Download for year {year} saved.
+2025-05-01 14:07:03,988 - INFO - Accessing http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/chikunbr.def
+2025-05-01 14:07:04,154 - INFO - Line selected: Semana epidem. notificação
+2025-05-01 14:07:04,306 - INFO - Column selected: UF de notificação
+2025-05-01 14:07:04,442 - INFO - Content selected: Todos os casos
+2025-05-01 14:07:04,651 - INFO - Year selected: 2024
+2025-05-01 14:07:04,799 - INFO - Button 'mostre' clicked successfully!
+2025-05-01 14:07:04,819 - INFO - Switched to new tab.
+2025-05-01 14:07:05,686 - INFO - CSV file download initiated.
+2025-05-01 14:07:35,689 - INFO - Arquivo renomeado de 'sinannet_cnv_chikunbr140704191_7_171_194.csv' para 'Chikungunya'
+2025-05-01 14:07:35,690 - INFO - Stage Download for year {year} saved.
+2025-05-01 14:07:37,258 - INFO - Accessing http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/chikunbr.def
+2025-05-01 14:07:37,424 - INFO - Line selected: Semana epidem. notificação
+2025-05-01 14:07:37,569 - INFO - Column selected: UF de notificação
+2025-05-01 14:07:37,703 - INFO - Content selected: Todos os casos
+2025-05-01 14:07:37,889 - INFO - Year selected: 2023
+2025-05-01 14:07:38,009 - INFO - Button 'mostre' clicked successfully!
+2025-05-01 14:07:38,035 - INFO - Switched to new tab.
+2025-05-01 14:07:38,667 - INFO - CSV file download initiated.
+2025-05-01 14:08:08,670 - INFO - Arquivo renomeado de 'sinannet_cnv_chikunbr140737191_7_171_194.csv' para 'Chikungunya'
+2025-05-01 14:08:08,672 - INFO - Stage Download for year {year} saved.
+2025-05-01 14:08:10,865 - INFO - Driver closed successfully.
