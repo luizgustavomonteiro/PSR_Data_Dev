@@ -75,8 +75,16 @@ WSGI_APPLICATION = 'PSR_Dev.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'psr_data',
+        'USER': 'root',
+        'PASSWORD': 'Violino!@#$1234',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+        },
+        'ATOMIC_REQUESTS': True,
     }
 }
 
