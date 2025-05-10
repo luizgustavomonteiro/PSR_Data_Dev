@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Load static files -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Chart.js for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid header-wrapper" style="background-color: #f2f2f2; padding: 5px;">
+        <div class="container-fluid px-5 d-flex align-items-center"> <!-- Flex container for logo and text -->
+            <img src="{% static 'C:\Dev\PSR_Data_Dev\PSR_Dev\myapp\static\img\usf-logo.png' %}" class="logo"
+                alt="Logo">
+            <div class="text-container">
+                <h1 class="logo-title">Scientific Research</h1>
+                <p class="logo-subtitle">Department of Scientific Research</p>
+                <p class="logo-subtitle">Universidade São Francisco - USF</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header-wrapper" style="background-color: #006B2D; padding: 40px;">
+        <div class="container-fluid px-12 d-flex align-items-center">
+            <div class="text-container">
+                <h2 style="margin-left: 9px;">Temporal Analysis of Epidemiological Diseases</h2>
+            </div>
+        </div>
+    </div>
+    <div class="transparent-container">
+        <h3>Maps, charts, and data provided by DATASUS, updates Monday 9pm</h3>
+        <button class="my-button">DATASUS<span>
+                <img src="{% static 'img\forward-Arrow4836.webp' %}" alt="forward-Arrow" width="18">
+            </span></h3>
+            </h3></button>
+    </div>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo">
+            </div> -->
+            <ul>
+                <li><a href="#" class="active" id="home-link">Predict Health Home</a></li>
+                <li><a href="#" id="analysis-link">Trends</a></li>
+                <li><a href="#" id="reports-link">Maps</a></li>
+                <li><a href="#" id="settings-link">Settings</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        {% block content %}
+        {% endblock %}
+        <!--<div class="main-content">
+            <header>
+                <h1>Welcome to Your Dashboard</h1>
+            </header>
+
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>$12,345</p>
+                </div>
+                <div class="card">
+                    <h3>Tasks</h3>
+                    <p>15/20 Completed</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div> 
+
+    
+    <script src="{% static 'C:\Dev\ScientifcSearch\predictHealth\myapp\static\js\scripts.js' %}"></script>-->
+</body>
+
+</html>
