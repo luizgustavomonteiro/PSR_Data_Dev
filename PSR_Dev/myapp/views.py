@@ -12,3 +12,6 @@ def graphs(request):
 
 def team(request):
     return render(request, 'developmentTeam.html', {})
+
+def base(request):
+    return render(request, 'base.html', {})

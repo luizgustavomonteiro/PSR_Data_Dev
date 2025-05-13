@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Load static files -->
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <!-- Chart.js for graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-    <div class="divided-container">
-        <div class="left-section">
-            <svg
-   width="35mm"
-   height="35mm"
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800mm"
+   height="800mm"
    viewBox="0 0 800 800"
    version="1.1"
    id="svg1"
@@ -198,57 +186,3 @@
     </g>
   </g>
 </svg>
-        </div>
-        
-        <div class="right-section">
-            <img src="{% static 'img/usf-logo.png' %}" width="85mm" height="85mm" alt="USF-Logo">
-        </div>
-    </div>
-    
-    <div class="custom-header">
-        <div class="bubbles"></div>
-        <div class="header-inner">
-            <div class="text-container">
-                <h2 class="header-title">Temporal Analysis of Epidemiological Diseases</h2>
-            </div>
-        </div>
-    </div>
-    
-    <div class="transparent-container">
-        <h3>Maps, charts, and data provided by DATASUS, updates Monday 9pm</h3>
-        <button class="my-button">
-            DATASUS 
-            <span><img src="{% static 'img/forward-Arrow4836.webp' %}" alt="forward-Arrow" width="15"></span>
-        </button>
-    </div>
-    
-    <div class="dashboard">
-        
-        <iframe src="http://127.0.0.1:8050" width="100%" height="600px" frameborder="0" style="border:none;"></iframe>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const bubbleContainer = document.querySelector('.custom-header .bubbles');
-          const bubbleCount = 20; // Número de bolhas
-        
-          for (let i = 0; i < bubbleCount; i++) {
-            const bubble = document.createElement('div');
-            bubble.classList.add('bubble');
-            
-            // Valores aleatórios (simulando o Sass)
-            bubble.style.setProperty('--bubble-left-offset', `${Math.random() * 100}vw`);
-            bubble.style.setProperty('--bubble-radius', `${1 + Math.random() * 9}vw`);
-            bubble.style.setProperty('--bubble-float-duration', `${6 + Math.random() * 6}s`);
-            bubble.style.setProperty('--bubble-sway-duration', `${4 + Math.random() * 2}s`);
-            bubble.style.setProperty('--bubble-float-delay', `${Math.random() * 4}s`);
-            bubble.style.setProperty('--bubble-sway-delay', `${Math.random() * 4}s`);
-            bubble.style.setProperty('--bubble-sway-type', 
-              Math.random() > 0.5 ? 'sway-left-to-right' : 'sway-right-to-left');
-            
-            bubbleContainer.appendChild(bubble);
-          }
-        });
-        </script>
-</body>
-</html>
