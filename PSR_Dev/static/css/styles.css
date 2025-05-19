@@ -3,14 +3,14 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #d0ece5;
   color: #333;
   line-height: 1.6;
 }
 
 /* Header Styles */
 .header-wrapper {
-  background-color: #f2f2f2;
+  background-color: #d0ece5;
   padding: 10px 0;
 }
 
@@ -22,9 +22,10 @@ body {
   max-width: 1200px; /* Ajuste conforme necessário */
   margin: 0 auto;
   padding: 5px;
-  background: rgba(255, 255, 255, 0.05); /* Fundo sutil (opcional) */
+  background-color: #d0ece5;
+  /* Fundo sutil (opcional) */
   border-radius: 8px;
-  height: 80px;
+  height: 40px;
 }
 
 /* Seções (esquerda/direita) */
@@ -32,18 +33,18 @@ body {
 .right-section {
   flex: 1; /* Ocupa espaço igual */
   display: flex;
-  margin-left: -140px;
+  margin-left: -150px;
   margin-right: -140px;
 }
 
 .left-section {
   justify-content: flex-start;
-  margin-top: 5px; /* Alinha imagem à esquerda */
+  margin-top: 4px; /* Alinha imagem à esquerda */
 }
 
 .right-section {
   justify-content: flex-end;
-  margin-top: -2px; /* Alinha imagem à direita */
+  margin-top: -1px; /* Alinha imagem à direita */
 }
 
 .divider-line {
@@ -106,7 +107,7 @@ body {
 /* Main Header */
 .custom-header {
   position: relative; /* Referência para as bolhas */
-  background: #006b2d; /* Cor de fundo do header */
+  background: #1a4d4d; /* Cor de fundo do header */
   width: 100%;
   padding: 40px 0;
   overflow: hidden; /* Esconde bolhas que saírem do container */
@@ -201,14 +202,15 @@ body {
 
 /* Transparent Container */
 .transparent-container {
-  background-color: #e6ffe6;
+  background-color: #d0ece5;
   color: #333;
   padding: 0px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #fff;
+  border-bottom: 0px solid #1a4d4d;
   margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 2);
 }
 
 .my-button {
@@ -231,8 +233,10 @@ body {
 /* Dashboard Layout */
 .dashboard {
   display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: calc(100vh - 200px);
-  background: linear-gradient(135deg, #198754, #28a745);
+  background: linear-gradient(135deg, #e8f1f2, #bfd9d6);
 }
 
 /* Sidebar */
@@ -286,7 +290,7 @@ body {
 /* Main Content */
 .main-content {
   flex: 1;
-  padding: 30px;
+  padding: 15px;
   max-width: 1200px;
   margin: 0 auto;
   background: linear-gradient(135deg, #198754, #28a745);
@@ -302,9 +306,10 @@ body {
 .cards {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: auto;
+  padding: 15px;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: right;
 }
 
 .card {
@@ -314,7 +319,7 @@ body {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 4);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
   position: relative; /* necessário pra posicionar a barra */
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
@@ -408,8 +413,82 @@ body {
     font-size: 24px;
   }
 
+  .header-subtitle {
+    font-size: 15px;
+  }
+
   .transparent-container {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.side-menu-collapsible {
+  position: absolute;
+  top: 295px; /* abaixo do topo */
+  left: 0;
+  width: 60px;
+  background: #1a4d4d;
+  border-radius: 0 8px 8px 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu-collapsible:hover {
+  width: auto;
+}
+
+.side-menu-collapsible ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu-collapsible li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  transition: background-color 0.2s;
+}
+
+.side-menu-collapsible li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+
+.side-menu-collapsible li .label {
+  white-space: nowrap;
+  opacity: 0;
+  max-width: 0;
+  margin-left: 10px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-width 0.3s ease;
+}
+
+.side-menu-collapsible:hover .label {
+  opacity: 1;
+  max-width: 150px;
+}
+
+/* Subtítulo menor e alinhado à esquerda */
+.header-subtitle {
+  font-size: 16px; /* Tamanho de fonte menor */
+  font-weight: 400; /* Peso normal */
+  margin: 0;
+  padding-left: 10px; /* Espaçamento da borda esquerda */
+  text-align: left;
+}
+
+/* Container do subtítulo, para garantir o alinhamento */
+.text-container-sub {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
 }

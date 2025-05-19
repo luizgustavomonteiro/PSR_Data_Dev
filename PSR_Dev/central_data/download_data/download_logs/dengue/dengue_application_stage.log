@@ -3208,3 +3208,37 @@
 2025-05-01 15:37:30,814 - INFO - Saved data: Year 2023, Week 50, Region DF, Confirmed Cases 1994
 2025-05-01 15:37:30,818 - INFO - Saved data: Year 2023, Week 51, Region DF, Confirmed Cases 3190
 2025-05-01 15:37:30,822 - INFO - Saved data: Year 2023, Week 52, Region DF, Confirmed Cases 4020
+2025-05-15 21:00:10,262 - INFO - Accessing http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/denguebbr.def
+2025-05-15 21:00:10,590 - INFO - Line selected: Semana epidem. notificação
+2025-05-15 21:00:10,825 - INFO - Column selected: UF de notificação
+2025-05-15 21:00:11,052 - INFO - Content selected: Casos Prováveis
+2025-05-15 21:00:11,318 - INFO - Year selected: 2025
+2025-05-15 21:00:11,521 - INFO - Button 'mostre' clicked successfully!
+2025-05-15 21:00:11,548 - INFO - Switched to new tab.
+2025-05-15 21:00:14,294 - INFO - CSV file download initiated.
+2025-05-15 21:00:44,301 - INFO - Arquivo existente 'Dengue' removido.
+2025-05-15 21:00:44,306 - INFO - Arquivo renomeado de 'sinannet_cnv_denguebbr210013186_209_61_242.csv' para 'Dengue'
+2025-05-15 21:00:44,306 - INFO - Stage Download for year {year} saved.
+2025-05-15 21:00:45,483 - INFO - Accessing http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/denguebbr.def
+2025-05-15 21:00:45,947 - INFO - Line selected: Semana epidem. notificação
+2025-05-15 21:00:46,259 - INFO - Column selected: UF de notificação
+2025-05-15 21:00:46,555 - INFO - Content selected: Casos Prováveis
+2025-05-15 21:00:46,970 - INFO - Year selected: 2024
+2025-05-15 21:00:47,444 - INFO - Button 'mostre' clicked successfully!
+2025-05-15 21:00:47,466 - INFO - Switched to new tab.
+2025-05-15 21:00:55,480 - INFO - CSV file download initiated.
+2025-05-15 21:01:25,482 - INFO - Arquivo existente 'Dengue' removido.
+2025-05-15 21:01:25,484 - INFO - Arquivo renomeado de 'sinannet_cnv_denguebbr210054186_209_61_242.csv' para 'Dengue'
+2025-05-15 21:01:25,486 - INFO - Stage Download for year {year} saved.
+2025-05-15 21:01:26,461 - INFO - Accessing http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/denguebbr.def
+2025-05-15 21:01:26,703 - INFO - Line selected: Semana epidem. notificação
+2025-05-15 21:01:26,991 - INFO - Column selected: UF de notificação
+2025-05-15 21:01:27,295 - INFO - Content selected: Casos Prováveis
+2025-05-15 21:01:27,734 - INFO - Year selected: 2023
+2025-05-15 21:01:27,964 - INFO - Button 'mostre' clicked successfully!
+2025-05-15 21:01:27,992 - INFO - Switched to new tab.
+2025-05-15 21:01:30,496 - INFO - CSV file download initiated.
+2025-05-15 21:02:00,506 - INFO - Arquivo existente 'Dengue' removido.
+2025-05-15 21:02:00,506 - INFO - Arquivo renomeado de 'sinannet_cnv_denguebbr210129200_247_39_194.csv' para 'Dengue'
+2025-05-15 21:02:00,506 - INFO - Stage Download for year {year} saved.
+2025-05-15 21:02:02,813 - INFO - Driver closed successfully.
